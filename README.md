@@ -1,6 +1,6 @@
-# revisaoapi
+# CP3
 
-Projeto de revisão de API para os alunos do 2TDSPM da FIAP
+Checkpoint desenvolvido para a matéria de Java para obtenção da nota. 
 ## Tecnologias
 
  - [Java 17](https://docs.oracle.com/en/java/javase/17/)
@@ -19,78 +19,88 @@ Projeto de revisão de API para os alunos do 2TDSPM da FIAP
 
  - [IntelliJ](https://www.jetbrains.com/pt-br/idea/)
  - [Postman](https://www.postman.com/)
+ - 
 ## API Reference
 
-#### Obter todos os clientes (findAll clienteDTO)
+#### Obter todas as maquiagens (findAll maquiagemDTO)
 
 ```http
-  GET /clientes
+  GET /maquiagens
 ```
 
-#### Obter cliente por id (findById clienteDTO)
+#### Obter maquiagem por id (findById maquiagemDTO)
 
 ```http
-  GET /clientes/${id}
+  GET /maquiagens/${id}
 ```
 
 | Parâmetro | Tipo   | Descrição                                    |
 |:----------|:-------|:---------------------------------------------|
-| `id`      | `Long` | **Obrigatório**. Id do cliente a ser buscado |
+| `id`      | `Long` | **Obrigatório**. Id da maquiagem a ser buscada |
 
-#### Gravar cliente (save)
+#### Salvar maquiagem (save)
 
 ```http
-  POST /clientes
+  POST /maquiagens
 ```
 
 Body:
 
 ```json
 {
-    "nome": "Exemplo",
-    "email": "exemplo@email.com",
-    "senha": "123456"
+    "nome": "Delineador",
+    "marca": "Rare beauty",
+    "categoria": "Olhos",
+    "crueltyFree": "True",
+    "preco":"150"
 }
 ```
 
 | Parâmetro | Tipo     | Descrição                       |
 |:----------|:---------|:--------------------------------|
-| `nome`    | `String` | Nome do cliente a ser gravado   |
-| `email`   | `String` | E-mail do cliente a ser gravado |
-| `senha`   | `String` | Senha do cliente a ser gravado  |
+| `nome`    | `String` | Nome da maquiagem a ser salva  |
+| `marca`   | `String` | Nome da marca da maquiagem a ser salva |
+| `categoria`   | `String` | Categoria da maquiagem a ser salva  |
+| `crueltyFree`   | `Boolean` | Informação se a marca testa ou não em animais a ser salva  |
+| `preco`   | `Double` | Preço da maquiagem a ser salva  |
 
-#### Atualizar cliente (update)
+
+#### Atualizar maquiagem (update)
 
 ```http
-  PUT /clientes/${id}
+  PUT /maquiagens/${id}
 ```
 
 | Parâmetro | Tipo   | Descrição                                       |
 |:----------|:-------|:------------------------------------------------|
-| `id`      | `Long` | **Obrigatório**. Id do cliente a ser atualizado |
+| `id`      | `Long` | **Obrigatório**. Id da maquiagem a ser atualizada |
 
 Body:
 
 ```json
 {
-    "nome": "Exemplo",
-    "email": "exemplo@email.com",
-    "senha": "123456"
+    "nome": "Delineador",
+    "marca": "Rare beauty",
+    "categoria": "Olhos",
+    "crueltyFree": "True",
+    "preco":"150"
 }
 ```
 
-| Parâmetro | Tipo     | Descrição                          |
-|:----------|:---------|:-----------------------------------|
-| `nome`    | `String` | Nome do cliente a ser atualizado   |
-| `email`   | `String` | E-mail do cliente a ser atualizado |
-| `senha`   | `String` | Senha do cliente a ser atualizado  |
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `nome`    | `String` | Nome da maquiagem a ser salva  |
+| `marca`   | `String` | Nome da marca da maquiagem a ser salva |
+| `categoria`   | `String` | Categoria da maquiagem a ser salva  |
+| `crueltyFree`   | `Boolean` | Informação se a marca testa ou não em animais a ser salva  |
+| `preco`   | `Double` | Preço da maquiagem a ser salva  |
 
-#### Excluir cliente (delete)
+#### Excluir maquiagem (delete)
 
 ```http
-  DELETE /clientes/${id}
+  DELETE /maquiagens/${id}
 ```
 
 | Parâmetro | Tipo   | Descrição                                     |
 |:----------|:-------|:----------------------------------------------|
-| `id`      | `Long` | **Obrigatório**. Id do cliente a ser excluído |
+| `id`      | `Long` | **Obrigatório**. Id da maquiagem a ser excluída |
