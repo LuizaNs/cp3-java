@@ -4,8 +4,9 @@ Checkpoint desenvolvido para a matéria de Java para obtenção da nota.
 
 ## Integrantes
 
- -Luiza Nunes RM99768
- -Pamella Schimalesky RM551600
+ - Luiza Nunes RM99768
+   
+ - Pamella Schimalesky RM551600
 
 ## Tecnologias
 
