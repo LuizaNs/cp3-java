@@ -1,6 +1,12 @@
 # CP3
 
 Checkpoint desenvolvido para a matéria de Java para obtenção da nota. 
+
+## Integrantes
+
+ -Luiza Nunes RM99768
+ -Pamella Schimalesky RM551600
+
 ## Tecnologias
 
  - [Java 17](https://docs.oracle.com/en/java/javase/17/)
@@ -19,7 +25,7 @@ Checkpoint desenvolvido para a matéria de Java para obtenção da nota.
 
  - [IntelliJ](https://www.jetbrains.com/pt-br/idea/)
  - [Postman](https://www.postman.com/)
- - 
+   
 ## API Reference
 
 #### Obter todas as maquiagens (findAll maquiagemDTO)
